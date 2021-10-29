@@ -13,6 +13,6 @@ class Post extends Model
 
     public function users()
     {
-        return User::belongsto('User');
+        return $this->belongsTo(User::class);
     }
 }
